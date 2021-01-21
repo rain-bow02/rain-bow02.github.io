@@ -1,0 +1,22 @@
+---
+layout: post
+title:  C语言"
+date:   2021-01-18 10:18:00
+categories: C
+---
+
+#include <stdio.h>
+#define N 10
+int main (void)
+{
+    int *p,a[N],i;
+    p=a; 
+    printf("Input:\n");
+    for(i=0;i<N;i++)
+        scanf ("%d",p++);
+    printf ("output:\n");
+    for(p=a;p<a+N;p++) 
+        printf("%d", *p);
+        printf("\n");
+    return 0;
+	}
